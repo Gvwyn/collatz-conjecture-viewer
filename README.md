@@ -30,4 +30,4 @@ requires **two inputs**: base number, which can be any number[^0], and X, the nu
 goes through Y's the sequence until X is found   
 either outputs how many steps does it required to get to X or tells the user that it's impossible to get to X  
 requires **two inputs**: Y, which can be any number[^0], and X, the number you're looking for in Y's sequence  
-[^0]: numbers which sequence exceed the limits at any point will halt the program
+[^0]: numbers above 0, or any number which sequence doesn't go above the limits (i guess above 2^63, not sure)
