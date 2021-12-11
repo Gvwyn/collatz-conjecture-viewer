@@ -13,7 +13,7 @@ It is also known as the /**3n + 1**/ problem. [Source](https://en.wikipedia.org/
 
 ### basics
 i have no experience in GUIs, so everything is text based  
-**IF YOU ENTER ANYTHING THAT IS NOT A NUMBER, will crash the program**
+**IF YOU ENTER ANYTHING THAT IS NOT A NUMBER, will crash the program**  
 in the menu, type the number of the function you want to use, then press `ENTER`  
 after each functions executes, you're prompted to press `ENTER` (do it after you mesmerized yourself with the result)
 
