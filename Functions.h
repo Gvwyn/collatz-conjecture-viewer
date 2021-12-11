@@ -75,7 +75,7 @@ void CalculateUntilX() {
     int Input, X, Result;
     int Steps = 0;
     bool ResultExist = false;
-    std::cout << "Calculate until result is X\nBase Number >> ";
+    std::cout << "Calculate until result is X in Y's sequence\nY (Base Number) >> ";
     std::cin >> Input;
     Result = Input;
     std::cout << "\nX >> ";
