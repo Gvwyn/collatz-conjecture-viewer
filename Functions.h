@@ -30,8 +30,8 @@ void Reduce() {
     std::cout << "Reduce to 1\nY >> ";
     std::cin >> Input;
     Result = Input;
-    int Highest = Input;
-    if(Input <= 1 || Input > 2147483647) {
+    long int Highest = Input;
+    if(Input <= 1) {
         std::cout << "Y is beyond the limits.\n";
         Highest, Input = 0;
         goto end_func1;
@@ -53,7 +53,7 @@ void Reduce() {
         }
     }
     if(Successful) {
-        printf("Your input (%i) took %i steps to reduce\nHighest Number: %i\n", Input, Steps, Highest);
+        printf("Your input (%li) took %i steps to reduce\nHighest Number: %li\n", Input, Steps, Highest);
     } else {
         printf("The result exceeded the limits.\n");
     }
@@ -70,7 +70,7 @@ void CalculateXStep() {
     std::cin >> Input;
     Result = Input;
     // y have to be above 1
-    if(Input <= 1 || Input > 2,147,483,647) {
+    if(Input <= 1) {
         Input = 0;
         std::cout << "Y is beyond the limits.\n";
     }
@@ -79,7 +79,7 @@ void CalculateXStep() {
     std::cin >> X;
     Steps = X;
     // x check
-    if(X <= 0 || Input > 2,147,483,647) {
+    if(X <= 0) {
         std::cout << "X is beyond the limits.\n";
         goto end_func2;
     }
@@ -100,7 +100,7 @@ void CalculateXStep() {
         }
     }
     if(Successful) { 
-        printf("After %i step(s), the input (%i) caused a result of %i\n", Steps, Input, Result);
+        printf("After %i step(s), the input (%li) caused a result of %li\n", Steps, Input, Result);
     } else {
         printf("The result exceeded the limits.\n");
     }
@@ -111,7 +111,7 @@ end_func2:
 
 // 3 | Calculate until X occurs in Y's sequence, IF IT EXIST
 void CalculateUntilX() {
-    long int Input, X, Result;
+    long long int Input, X, Result;
     bool Successful;
     int Steps = 0;
     bool ResultExist = false;
@@ -128,7 +128,7 @@ void CalculateUntilX() {
     std::cout << "\nX >> ";
     std::cin >> X;
     // x check
-    if(X <= 0  || Input > 2,147,483,647) {
+    if(X <= 0) {
         std::cout << "X is beyond the limits.\n";
         goto end_func3;
     }
@@ -165,10 +165,10 @@ void CalculateUntilX() {
     }
 
     if(ResultExist = true) {
-        printf("The number '%i' occurs after %i step(s) in the collatz-sequence of %i\n", X, Steps, Input);
+        printf("The number '%li' occurs after %i step(s) in the collatz-sequence of %li\n", X, Steps, Input);
     }
     else {
-        printf("There's no occurrence of %i in the collatz-sequence of %i\n", X, Input);
+        printf("There's no occurrence of %li in the collatz-sequence of %li\n", X, Input);
     }
 end_func3:
     std::cout << "Press ENTER to return to the menu";
