@@ -7,7 +7,7 @@ It is also known as the /**3n + 1**/ problem. [Source](https://en.wikipedia.org/
 
 ## Documentation (help, and other stuff)
 ### known stuff, i'll fix them one day
-- [ ] numbers that eventually exceed the 32/64 bit limit, will halt the program  
+- [ ] numbers that eventually exceed the integer limit, will crash the program
 - [x] negative numbers, fractions have cool effects
 - [ ] anything that is not a number will annihilate the program 
 
