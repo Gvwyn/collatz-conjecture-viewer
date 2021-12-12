@@ -24,13 +24,13 @@ void Cleart() {
 
 // 1 | Reduce to 1
 void Reduce() {
-    long int Input, Result;
-    int Steps = 0;
+    long long int Input, Result;
+    long int Steps = 0;
     bool Successful = true;
     std::cout << "Reduce to 1\nX >> ";
     std::cin >> Input;
     Result = Input;
-    long int Highest = Input;
+    long long int Highest = Input;
 
     // printing out the sequence question
     std::string Answer;
@@ -46,7 +46,7 @@ void Reduce() {
     }
 
     while(Result != 1) {
-        if(PrintOut) { printf("%i ", Result); }
+        if(PrintOut) { printf("%lli ", Result); }
         if(Result <= 0) { 
             Successful = false;
             break;    
@@ -62,7 +62,7 @@ void Reduce() {
         }
     }
     if(Successful) {
-        printf("1\nYour input (%li) took %i steps to reduce\nHighest Number: %li\n", Input, Steps, Highest);
+        printf("1\nYour input (%lli) took %li steps to reduce\nHighest Number: %lli\n", Input, Steps, Highest);
     } else {
         printf("\nThe result exceeded the limits.\n");
     }
@@ -82,15 +82,17 @@ end_func2:
 
 // 3 | Calculate X steps
 void CalculateXStep() {
-    long int Input, X, Steps, Result;
+    long long int Input, X, Steps, Result;
+    long int StepsToLoop = 0;
     bool Successful = true;
+    bool LoopReached = false;
     std::cout << "Calculate X Steps from Y's sequence\nY >> ";
     std::cin >> Input;
     Result = Input;
     // y have to be above 1
     if(Input < 1) {
-        Input = 0;
         std::cout << "Y is beyond the limits.\n";
+        goto end_func3;
     }
 
     std::cout << "\nX >> ";
@@ -108,7 +110,13 @@ void CalculateXStep() {
             Successful = false;
             break;    
         }
-        
+        else if(Result == 1 && !LoopReached) {
+            LoopReached = true;
+        }
+        if(!LoopReached) {
+            StepsToLoop++;
+        }
+
         X--;
         if((Result % 2) == 0) {
             Result = Result / 2;
@@ -117,7 +125,10 @@ void CalculateXStep() {
         }
     }
     if(Successful) { 
-        printf("After %i step(s), the input (%li) caused a result of %li\n", Steps, Input, Result);
+        printf("After %li step(s), the input (%lli) caused a result of %lli\n", Steps, Input, Result);
+        if(LoopReached) {
+            printf("NOTICE: 4-2-1 loop reached after %li steps\n", StepsToLoop);
+        }
     } else {
         printf("The result exceeded the limits.\n");
     }
@@ -129,7 +140,7 @@ end_func3:
 
 // 4 | Calculate until X occurs in Y's sequence, IF IT EXIST
 void CalculateUntilX() {
-    long long int Input, X, Result;
+    long int Input, X, Result;
     bool Successful = true;
     int Steps = 0;
     bool ResultExist = false;
