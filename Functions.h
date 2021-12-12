@@ -27,7 +27,7 @@ void Reduce() {
     long int Input, Result;
     int Steps = 0;
     bool Successful = true;
-    std::cout << "Reduce to 1\nY >> ";
+    std::cout << "Reduce to 1\nX >> ";
     std::cin >> Input;
     Result = Input;
     long int Highest = Input;
@@ -40,7 +40,7 @@ void Reduce() {
     if(Answer == "Y" || Answer == "y") { PrintOut = true; }
 
     if(Input < 1) {
-        std::cout << "Y is beyond the limits.\n";
+        std::cout << "X is beyond the limits.\n";
         Highest, Input = 0;
         goto end_func1;
     }
@@ -88,7 +88,7 @@ void CalculateXStep() {
     std::cin >> Input;
     Result = Input;
     // y have to be above 1
-    if(Input <= 1) {
+    if(Input < 1) {
         Input = 0;
         std::cout << "Y is beyond the limits.\n";
     }
@@ -130,7 +130,7 @@ end_func3:
 // 4 | Calculate until X occurs in Y's sequence, IF IT EXIST
 void CalculateUntilX() {
     long long int Input, X, Result;
-    bool Successful;
+    bool Successful = true;
     int Steps = 0;
     bool ResultExist = false;
     std::cout << "Calculate until result is X in Y's sequence\nY (Base Number) >> ";
@@ -159,15 +159,15 @@ void CalculateUntilX() {
 
     // collatz sequence
     while(Result != 1) {
-        if(Result <= 0) { 
+        if(Result < 0) { 
             Successful = false;
             break;    
         }
-        Steps++;
         if(Result == X) {
             ResultExist = true;
             break;
         }
+        Steps++;
         if((Result % 2) == 0) {
             Result = Result / 2;
         } else {
