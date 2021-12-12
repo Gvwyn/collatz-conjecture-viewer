@@ -65,6 +65,6 @@ example:
 ```
 Y (Base Number) >> 69
 X >> 4
-The number '4' occurs after 13 step(s) in the collatz-sequence of 69
+The number '4' occurs after 12 step(s) in the collatz-sequence of 69
 ```
 [^0]: numbers above 0, or any number which sequence doesn't go above the limits (i guess above 2^64, im not entirely sure)
