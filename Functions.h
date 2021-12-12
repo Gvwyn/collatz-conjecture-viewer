@@ -140,11 +140,11 @@ end_func3:
 
 // 4 | Calculate until X occurs in Y's sequence, IF IT EXIST
 void CalculateUntilX() {
-    long int Input, X, Result;
+    long long int Input, X, Result;
     bool Successful = true;
-    int Steps = 0;
+    long int Steps = 0;
     bool ResultExist = false;
-    std::cout << "Calculate until result is X in Y's sequence\nY (Base Number) >> ";
+    std::cout << "Find X in Y's sequence\nY >> ";
     std::cin >> Input;
     Result = Input;
 
@@ -175,6 +175,7 @@ void CalculateUntilX() {
             break;    
         }
         if(Result == X) {
+            printf("%li = %li", Result, X);
             ResultExist = true;
             break;
         }
@@ -190,10 +191,10 @@ void CalculateUntilX() {
         goto end_func4;
     }
 
-    if(ResultExist = true) {
-        printf("The number '%li' occurs after %i step(s) in the collatz-sequence of %li\n", X, Steps, Input);
+    if(ResultExist == true) {
+        printf("The number '%lli' occurs after %li step(s) in the sequence of %lli\n", X, Steps, Input);
     } else {
-        printf("There's no occurrence of %li in the collatz-sequence of %li\n", X, Input);
+        printf("There's no occurrence of %lli in %lli's sequence\n", X, Input);
     }
 
 end_func4:
