@@ -14,7 +14,7 @@ no matter which positive integer is chosen to start the sequence."*
 It is also known as the /**3n + 1**/ problem. [Source](https://en.wikipedia.org/wiki/Collatz_conjecture)  
   
 # Documentation
-## Compiling
+## compiling
 theres nothing extra in it, just use  
 `g++ Main.cpp -o collatz` or `g++ Main.cpp -o collatz.exe`
 ## known stuff, i'll fix them one day
