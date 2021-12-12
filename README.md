@@ -10,6 +10,7 @@ It is also known as the /**3n + 1**/ problem. [Source](https://en.wikipedia.org/
 - [ ] numbers that eventually exceed the integer limit, will crash the program
 - [x] negative numbers, fractions have cool effects
 - [ ] anything that is not a number will annihilate the program 
+- [ ] entering too big numbers cause the program to literally die
 
 ### basics
 i have no experience in GUIs, so everything is text based  
