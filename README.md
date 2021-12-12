@@ -1,6 +1,9 @@
 ## Table of Contents
 1. [About The Collatz Conjecture](https://github.com/nemBalazs/collatz-conjecture-viewer#)
 2. [Documentation](https://github.com/nemBalazs/collatz-conjecture-viewer#documentation)
+     - [Issues](https://github.com/nemBalazs/collatz-conjecture-viewer#known-stuff-ill-fix-them-one-day)
+     - [Basic Infos](https://github.com/nemBalazs/collatz-conjecture-viewer#basics)
+     - [Functions](https://github.com/nemBalazs/collatz-conjecture-viewer#functions)
 
 # Collatz Conjecture Viewer
 *"The Collatz conjecture in mathematics asks whether repeating certain simple arithmetic operations will eventually transform every positive integer into one.
@@ -23,7 +26,7 @@ in the menu, type the number of the function you want to use, then press `ENTER`
 after each function executes, you're prompted to press `ENTER` (do it after you mesmerized yourself with the result)
 
 
-## functions, and how to use them
+## functions
 ### **[0] EXIT**  
 exits the program
 ### **[1] Reduce to 1:**  
