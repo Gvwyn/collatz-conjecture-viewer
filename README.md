@@ -43,6 +43,7 @@ X >> 7
 Print out sequence? (Y/N) >> y
 7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1  
 Your input (7) took 16 steps to reduce
+Highest Number: 52
 ```
 ### **[2] Graph X's sequence**
 not yet implemented
