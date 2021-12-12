@@ -1,6 +1,7 @@
 ## Table of Contents
 1. [About The Collatz Conjecture](https://github.com/nemBalazs/collatz-conjecture-viewer#)
 2. [Documentation](https://github.com/nemBalazs/collatz-conjecture-viewer#documentation)
+     - [Compile](https://github.com/nemBalazs/collatz-conjecture-viewer#compiling)
      - [Issues](https://github.com/nemBalazs/collatz-conjecture-viewer#known-stuff-ill-fix-them-one-day)
      - [Basic Infos](https://github.com/nemBalazs/collatz-conjecture-viewer#basics)
      - [Functions](https://github.com/nemBalazs/collatz-conjecture-viewer#functions)
@@ -13,6 +14,9 @@ no matter which positive integer is chosen to start the sequence."*
 It is also known as the /**3n + 1**/ problem. [Source](https://en.wikipedia.org/wiki/Collatz_conjecture)  
   
 # Documentation
+## Compiling
+theres nothing extra in it, just use  
+`g++ Main.cpp -o collatz` or `g++ Main.cpp -o collatz.exe`
 ## known stuff, i'll fix them one day
 - [ ] numbers that eventually exceed the integer limit, will crash the program  
 - [x] negative numbers, fractions have cool effects
