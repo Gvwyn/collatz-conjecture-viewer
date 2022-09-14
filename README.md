@@ -1,10 +1,10 @@
 ## Table of Contents
-1. [About The Collatz Conjecture](https://github.com/nemBalazs/collatz-conjecture-viewer#)
-2. [Documentation](https://github.com/nemBalazs/collatz-conjecture-viewer#documentation)
-     - [Compile](https://github.com/nemBalazs/collatz-conjecture-viewer#compiling)
-     - [Issues](https://github.com/nemBalazs/collatz-conjecture-viewer#known-stuff-ill-fix-them-one-day)
-     - [Basic Infos](https://github.com/nemBalazs/collatz-conjecture-viewer#basics)
-     - [Functions](https://github.com/nemBalazs/collatz-conjecture-viewer#functions)
+1. [About The Collatz Conjecture](https://github.com/Gvwyn/collatz-conjecture-viewer#)
+2. [Documentation](https://github.com/Gvwyn/collatz-conjecture-viewer#documentation)
+     - [Compile](https://github.com/Gvwyn/collatz-conjecture-viewer#compiling)
+     - [Issues](https://github.com/Gvwyn/collatz-conjecture-viewer#known-stuff-ill-fix-them-one-day)
+     - [Basic Infos](https://github.com/Gvwyn/collatz-conjecture-viewer#basics)
+     - [Functions](https://github.com/Gvwyn/collatz-conjecture-viewer#functions)
 
 # Collatz Conjecture Viewer
 *"The Collatz conjecture in mathematics asks whether repeating certain simple arithmetic operations will eventually transform every positive integer into one.
